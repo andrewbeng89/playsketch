@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>OT Sketch Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="./css/index.css" rel="stylesheet">
+	<link rel="stylesheet" href="./stylesheets/draw.css">
+	<script src="/channel/bcsocket.js"></script>
+	<script src="/share/share.js"></script>
+	<script src="./javascripts/jsondiffpatch.min.js"></script>
+	<script src="/share/json.js"></script>
+	<script src="./javascripts/fabric.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">PlaySketch</a>
+        <div class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#GitHub">GitHub</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container" ng-controller="SocketsController" ng-cloak>
+
+      <div class="starter-template">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+	        <div class="btn-group">
+				<button id="drawing-mode" class="btn btn-default">Cancel drawing mode</button>
+				<button id="erase-mode" class="btn btn-default">Enter erase mode</button>
+				<button id="undo" class="btn btn-default">Undo</button>
+				<button id="redo" class="btn btn-default">Redo</button>
+				<button id="clear-canvas" class="btn btn-default">Clear</button>
+			</div>
+        </div>
+        <div class="col-md-6" style="display: inline-block">
+			<canvas id="c" width="500" height="500" style="border:1px solid #aaa"></canvas>
+			<div id="drawing-mode-options">
+				<label for="drawing-mode-selector">Mode:</label>
+				<select id="drawing-mode-selector">
+					<option>Pencil</option>
+					<option>Circle</option>
+					<option>Spray</option>
+					<option>Pattern</option>
+					<option>hline</option>
+					<option>vline</option>
+					<option>square</option>
+					<option>diamond</option>
+					<option>texture</option>
+				</select>
+				<br>
+				<label for="drawing-line-width">Line width:</label> <span class="info">30</span>
+
+				<input type="range" value="30" min="0" max="150" id="drawing-line-width">
+				<br>
+				<label for="drawing-color">Line color:</label>
+				<input type="color" value="#005E7A" id="drawing-color">
+				<br>
+				<label for="drawing-shadow-color">Shadow color:</label>
+				<input type="color" value="#005E7A" id="drawing-shadow-color">
+				<br>
+				<label for="drawing-shadow-width">Shadow width:</label> <span class="info">0</span>
+
+				<input type="range" value="0" min="0" max="50" id="drawing-shadow-width">
+				<br>
+				<label for="drawing-shadow-offset">Shadow offset:</label> <span class="info">0</span>
+
+				<input type="range" value="0" min="0" max="50" id="drawing-shadow-offset">
+				<br>
+			</div>
+	  </div>
+      </div>
+
+    </div><!-- /.container -->
+
+	<script src="./javascripts/draw_basic.js"></script>
+</body>
+</html>

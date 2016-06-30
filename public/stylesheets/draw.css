@@ -1,0 +1,15 @@
+ound: #f5f2f0;
+    padding: 10px;
+}
+label {
+    display: inline-block;
+    width: 130px;
+}
+.info {
+    display: inline-block;
+    width: 25px;
+    background: #ffc;
+}
+#bd-wrapper {
+    min-width: 1500px;
+}

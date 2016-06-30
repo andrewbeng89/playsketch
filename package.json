@@ -1,0 +1,29 @@
+{
+  "name": "playsketch",
+  "version": "1.0.0",
+  "description": "Real-time collaborative sketching tool with Operational Transformation",
+  "main": "app.js",
+  "dependencies": {
+    "session.socket.io": "^0.1.6",
+    "express": "^3.0.0-rc4",
+    "share": "^0.6.2",
+    "socket.io": "^0.9.16",
+    "connect": "^2.8.5",
+    "jsondiffpatch": "^0.0.8",
+    "jade": "^0.33.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewbeng89/playsketch.git"
+  },
+  "author": "Andrew Beng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewbeng89/playsketch/issues"
+  },
+  "homepage": "https://github.com/andrewbeng89/playsketch#readme"
+}
