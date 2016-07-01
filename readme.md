@@ -8,8 +8,8 @@ The web-based app is the result of an individual research project I undertook in
 
 Pioneered by Ellis and Gibbs in 1989, Operational Transformation (OT) is currently the most extensively used concurrency control technology used in modern web-based collaborative tools (e.g. Google Docs, Trello). Early implementations of OT algorithms focused on solving concurrency and consistency issues in text editing groupware systems, with an example of one such issue diagrammed below:
 
-![text concurrency issue](/images/fig1.png)
+![text concurrency issue](public/images/fig1.png)
 
 The concurrency issue here occurs when the *operation* “Del 6” is propagated from Person 1 to Person 2's text editor. Because Person 2 has already removed the third character from the string in *operation* “Del 3”, “Del 6” cannot be achieved as there are now only five characters left. OT algorithms introduce the concept of *transforming* any concurrent incoming *operation* from other sites against the *operation* that has been executed locally.
 
-![resolved text concurrency](/images/fig2.png)
+![resolved text concurrency](public/images/fig2.png)
