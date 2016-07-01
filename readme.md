@@ -1,4 +1,4 @@
-# PlaySketch: a collaborative sketcing tool
+# PlaySketch: a collaborative sketching tool
 
 PlaySketch is an informal web-based sketching tool that targets video game designers. Featureing real-time collaboration, it allows teams of users to collaborate on the same sketch, or a single user to work across multiple devices.
 
