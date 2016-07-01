@@ -26,6 +26,13 @@ My research highlighted the [ShareJS](https://github.com/share/ShareJS "ShareJS 
 
 ![PlaySketch architecture](public/images/fig12.png)
 
-Try the PlaySketch prototype [here](http://playsketch.andrewbeng89.me "PlaySketch"). The app is compatible on Chrome or Firefox browsers, as well as mobile browsers. The default mode in PlaySketch is "drawing mode", with strokes captured on the sketchpad by mouse or touch (on mobile devices). Sketch and shape manipulations (e.g. object/group selections, move, scale, skey) are enabled by cancelling "drawing mode". *Operations* resulting from manipulations are captured by comparing previous and current object states, before being propagated and *transformed*.
+Try the PlaySketch prototype [here](http://playsketch.andrewbeng89.me "PlaySketch"). The app is compatible on Chrome or Firefox browsers, as well as mobile browsers. The default mode in PlaySketch is "drawing mode", with strokes captured on the sketchpad by mouse or touch (on mobile devices). Sketch and shape manipulations (e.g. object/group selections, move, scale, skey) are enabled by cancelling "drawing mode". *Operations* resulting from manipulations are captured by comparing previous and current object states, before being propagated and *transformed*. Users can collaborate on sketches by sharing the URL including the hash ID from address bar.
 
 ![PlaySketch prototype](public/images/fig13.png)
+
+## Clone and run PlaySketch
+
+1. `git clone https://github.com/andrewbeng89/playsketch.git`
+2. `npm install`
+3. Run with `node app`
+3. Open Chrome or Firefox to http://localhost:3000
